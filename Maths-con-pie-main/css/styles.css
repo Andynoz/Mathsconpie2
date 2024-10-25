@@ -1,0 +1,197 @@
+
+
+/* Colores
+fondo: #f9f9f9
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+article {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 1em 0;
+    padding: 1em;
+    width: 30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article h2 {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+}
+
+article p {
+    font-size: 1em;
+    color: #666;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    width: 12%;
+    padding: 9px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+aside h3 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 0.5em 0;
+}
+
+aside a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+
+
+#noticias {
+    display: grid;
+    grid-template-columns: 65% 35%; /* Noticia principal ocupa el 65%, secundarias el 35% */
+    gap: 20px;
+    padding: 1em;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.noticia-principal article {
+    width: 100%;
+}
+
+.noticia-principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.noticia-principal article {
+    width: 100%;
+}
+
+.noticias-secundarias {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.noticias-secundarias article {
+    width: 100%;
+    height: 45%;
+    min-height: 150%;
+    margin: 0;
+}
+
+.noticias-secundarias article:last-child {
+    margin-right: 0;
+}
+
+.contenidomain {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+
+.fechap {
+    font-size: 0.9em;
+    color: #555
+}
+
+.leermas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.leermas:hover {
+    background-color: #0056b3;
+}
+
